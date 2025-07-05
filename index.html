@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>امیر بت</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1 class="title">امیر بت</h1>
+  <div class="table">
+    <div class="player" id="ai-player">
+      <div class="card back"></div>
+      <div class="card back"></div>
+      <p>بازیکن هوش مصنوعی</p>
+    </div>
+
+    <div class="community-cards" id="community">
+      <div class="card hidden" id="flop1"></div>
+      <div class="card hidden" id="flop2"></div>
+      <div class="card hidden" id="flop3"></div>
+      <div class="card hidden" id="turn"></div>
+      <div class="card hidden" id="river"></div>
+    </div>
+
+    <div class="player" id="user-player">
+      <div class="card" id="player1"></div>
+      <div class="card" id="player2"></div>
+      <p>شما</p>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button onclick="startGame()">شروع بازی</button>
+    <button onclick="showFlop()" id="btn-flop" disabled>نمایش Flop</button>
+    <button onclick="showTurn()" id="btn-turn" disabled>نمایش Turn</button>
+    <button onclick="showRiver()" id="btn-river" disabled>نمایش River</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

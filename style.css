@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  direction: rtl;
+  background: radial-gradient(#004b23, #002d13);
+  color: white;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+.table {
+  background: #006400;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 25px;
+  width: 95%;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 50px;
+  height: 75px;
+  border-radius: 8px;
+  background-color: white;
+  background-size: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card.back {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Poker_card_back.svg/1024px-Poker_card_back.svg.png');
+  background-size: cover;
+}
+
+.card.hidden {
+  background-color: darkgreen;
+  color: transparent;
+}
+
+.community-cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.controls {
+  margin: 20px;
+}
+
+button {
+  font-size: 1em;
+  padding: 8px 16px;
+  margin: 4px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: gray;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 40px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+}
